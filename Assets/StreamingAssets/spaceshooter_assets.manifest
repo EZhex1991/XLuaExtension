@@ -1,0 +1,64 @@
+ManifestFileVersion: 0
+CRC: 2217474470
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 7ba723cf1cc1bc88995a5a6a6122d15e
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: cab968d9b6eceee3ff891fe7a5cddea0
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 4
+  Script: {instanceID: 0}
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 23
+  Script: {instanceID: 0}
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 33
+  Script: {instanceID: 0}
+- Class: 43
+  Script: {instanceID: 0}
+- Class: 48
+  Script: {instanceID: 0}
+- Class: 54
+  Script: {instanceID: 0}
+- Class: 64
+  Script: {instanceID: 0}
+- Class: 82
+  Script: {instanceID: 0}
+- Class: 83
+  Script: {instanceID: 0}
+- Class: 114
+  Script: {fileID: 11500000, guid: 03ac954430ba2904886bd74e7333b42d, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: f89a894f7a09b4f429394ac6229fe24b, type: 3}
+- Class: 115
+  Script: {instanceID: 0}
+- Class: 135
+  Script: {instanceID: 0}
+- Class: 136
+  Script: {instanceID: 0}
+- Class: 198
+  Script: {instanceID: 0}
+- Class: 199
+  Script: {instanceID: 0}
+Assets:
+- Assets/EZhex1991/XLuaExtension/Test/02_SpaceShooter/_Complete-Lua/done_explosion_player.prefab
+- Assets/EZhex1991/XLuaExtension/Test/02_SpaceShooter/_Complete-Lua/done_explosion_asteroid.prefab
+- Assets/EZhex1991/XLuaExtension/Test/02_SpaceShooter/_Complete-Lua/Done_Player.prefab
+- Assets/EZhex1991/XLuaExtension/Test/02_SpaceShooter/_Complete-Lua/Done_Asteroid
+  03.prefab
+- Assets/EZhex1991/XLuaExtension/Test/02_SpaceShooter/_Complete-Lua/Done_Asteroid
+  01.prefab
+- Assets/EZhex1991/XLuaExtension/Test/02_SpaceShooter/_Complete-Lua/done_explosion_enemy.prefab
+- Assets/EZhex1991/XLuaExtension/Test/02_SpaceShooter/_Complete-Lua/Done_Asteroid
+  02.prefab
+- Assets/EZhex1991/XLuaExtension/Test/02_SpaceShooter/_Complete-Lua/Done_Bolt.prefab
+- Assets/EZhex1991/XLuaExtension/Test/02_SpaceShooter/_Complete-Lua/Done_Enemy Ship.prefab
+- Assets/EZhex1991/XLuaExtension/Test/02_SpaceShooter/_Complete-Lua/Done_Bolt-Enemy.prefab
+Dependencies: []

@@ -1,0 +1,4 @@
+{"fileName":"script_lua","md5":"a67fd735dc0e1205a251aaa6c9cdd483","size":4}
+{"fileName":"spaceshooter","md5":"704a7904ae9a0508fdac4bdebf7d175b","size":2555}
+{"fileName":"spaceshooter_assets","md5":"9440a072e6ef201f4cf37c3e43109f59","size":2042}
+{"fileName":"StreamingAssets","md5":"a53c7d82f8578147b5193cc5db226008","size":1}
