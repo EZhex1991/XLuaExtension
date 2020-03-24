@@ -11,7 +11,7 @@ namespace EZhex1991.XLuaExtension
 {
     public static class EZMenuItems
     {
-        private const string ROOT_NAME = "EZhex1991/XLuaExtension/";
+        private const string ROOT_NAME = "EZUnity/XLuaExtension/";
 
         [MenuItem(ROOT_NAME + "Lua Settings", false, 18000)]
         private static void LuaSettings()
