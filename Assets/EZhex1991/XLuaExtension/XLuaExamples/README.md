@@ -15,3 +15,4 @@
 1. [RawObject](08_RawObject) - “int传过去成了long？byte[]传过去成了string？”
 1. [DOTween](09_DOTween) - “DOTween不能用？扩展方法不能用？”
 1. [Hotfix](10_Hotfix) - “Hotfix不能用？官方示例报错？HotFix不能调用原来的方法？”
+1. [Dispose](11_Dispose) - “Dispose时报错？”
