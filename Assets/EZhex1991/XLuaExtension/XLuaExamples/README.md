@@ -16,3 +16,4 @@
 1. [DOTween](09_DOTween) - “DOTween不能用？扩展方法不能用？”
 1. [Hotfix](10_Hotfix) - “Hotfix不能用？官方示例报错？HotFix不能调用原来的方法？”
 1. [Dispose](11_Dispose) - “Dispose时报错？”
+1. [GetComponents](12_GetComponents) - "数组为空？GetComponents报类型错误？"
