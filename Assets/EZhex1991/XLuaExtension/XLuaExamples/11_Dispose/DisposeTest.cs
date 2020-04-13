@@ -5,6 +5,7 @@
  */
 using System;
 using System.Collections.Generic;
+using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.UI;
 using XLua;
@@ -22,28 +23,40 @@ namespace EZhex1991.XLuaExtension.Example
     /// require('xlua.util').print_func_ref_by_csharp()可以用来查看未释放的引用
     /// </summary>
     [LuaCallCSharp]
-    public class DisposeTest : LuaManager
+    public class DisposeTest : MonoBehaviour
     {
+        private LuaEnv luaEnv;
         public Button button_Test;
+        public Button button_Unregister;
+        public UnityAction luaFunction;
 
         private void Start()
         {
+            luaEnv = new LuaEnv();
             luaEnv.DoString(@"
-                local DisposeTest = CS.EZhex1991.XLuaExtension.Example.DisposeTest
-                local testObject = CS.UnityEngine.GameObject.Find('DisposeTest'):GetComponent(typeof(DisposeTest))
-
-                function Unregister()
-                    testObject.button_Test.onClick:RemoveAllListeners()
-                    -- UnityAction会有缓存，清除后需要调用一下
-                    testObject.button_Test.onClick:Invoke()
-                    print('----------Unregistered----------')
+                function LuaFunction()
+                    print('Lua Function')
                 end
             ");
+
             print("----------Register----------");
-            button_Test.onClick.AddListener(luaEnv.Global.Get<UnityAction>("Unregister"));
+            luaFunction = luaEnv.Global.Get<UnityAction>("LuaFunction");
+            button_Test.onClick.AddListener(luaFunction);
+
+            button_Unregister.onClick.AddListener(Unregister);
+        }
+        private void Unregister()
+        {
+            print("----------Unregistered----------");
+            button_Test.onClick.RemoveAllListeners();
+            // UnityAction会有缓存，清除后需要调用一下
+            button_Test.onClick.Invoke();
+            // 变量置空
+            luaFunction = null;
         }
         private void OnDestroy()
         {
+            // 未进行Unregister就退出会报错
             luaEnv.Dispose();
             print("LuaEnv Disposed");
         }
@@ -55,6 +68,7 @@ namespace EZhex1991.XLuaExtension.Example
         public static List<Type> CSharpCallLua = new List<Type>()
         {
             typeof(Action),
+            typeof(Action<int, int>),
             typeof(UnityAction),
         };
     }
